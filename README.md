@@ -55,7 +55,7 @@ This app follows modern Android development best practices:
 
 ### 1. Clone the repository
 
-\\\ash
+\\\ Bash
 git clone https://github.com/yourusername/ShutAppChat-Client.git
 cd ShutAppChat-Client
 \\\
@@ -64,7 +64,7 @@ cd ShutAppChat-Client
 
 Create \ServerConfig.kt\ from the template:
 
-\\\ash
+\\\Bash
 cp src/main/java/it/fabiodirauso/shutappchat/config/ServerConfig.example.kt \
    src/main/java/it/fabiodirauso/shutappchat/config/ServerConfig.kt
 \\\
@@ -91,7 +91,7 @@ Open the project in Android Studio and:
 
 Or use command line:
 
-\\\ash
+\\\Bash
 ./gradlew assembleDebug
 ./gradlew installDebug
 \\\
@@ -100,22 +100,22 @@ Or use command line:
 
 \\\
 app/
- src/main/
+src/main/
     java/it/fabiodirauso/shutappchat/
-       activities/        # UI Activities
-       adapters/          # RecyclerView Adapters
-       api/               # API interfaces and DTOs
-       config/            # App configuration
-       database/          # Room database entities and DAOs
-       fragments/         # UI Fragments
-       models/            # Data models
-       network/           # Networking layer
-       repositories/      # Data repositories
-       utils/             # Utility classes
-       viewmodels/        # ViewModels
-       websocket/         # WebSocket implementation
-    res/                   # Resources (layouts, drawables, etc.)
- build.gradle.kts           # App-level build configuration
+	       activities/        # UI Activities
+		   adapters/          # RecyclerView Adapters
+		   api/               # API interfaces and DTOs
+		   config/            # App configuration
+		   database/          # Room database entities and DAOs
+		   fragments/         # UI Fragments
+		   models/            # Data models
+		   network/           # Networking layer
+		   repositories/      # Data repositories
+		   utils/             # Utility classes
+		   viewmodels/        # ViewModels
+	   websocket/         # WebSocket implementation
+	   res/                   # Resources (layouts, drawables, etc.)
+build.gradle.kts           # App-level build configuration
 \\\
 
 ##  Configuration
