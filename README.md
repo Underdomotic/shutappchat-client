@@ -1,4 +1,4 @@
-﻿# ShutAppChat - Android Client
+# ShutAppChat - Android Client
 
 <p align="center">
   <img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="ShutAppChat Logo" width="120"/>
