@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/imageViewGroupIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_group_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGroupName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/textViewLastMessageTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imageViewGroupIcon"
+        app:layout_constraintTop_toTopOf="@id/imageViewGroupIcon"
+        tools:text="Gruppo Amici" />
+
+    <TextView
+        android:id="@+id/textViewLastMessage"
+        android:layout_width="346dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/textViewGroupName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/textViewGroupName"
+        app:layout_constraintTop_toBottomOf="@id/textViewGroupName"
+        tools:text="Ultimo messaggio qui" />
+
+    <TextView
+        android:id="@+id/textViewLastMessageTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewGroupName"
+        tools:text="10:30" />
+
+    <TextView
+        android:id="@+id/textViewUnreadBadge"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/badge_background"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewLastMessageTime"
+        tools:text="3"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textViewMemberCount"
+        android:layout_width="97dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewGroupIcon"
+        app:layout_constraintStart_toStartOf="@id/textViewLastMessage"
+        tools:text="5 membri" />
+
+    <ImageView
+        android:id="@+id/imageViewGroupModeIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_lock"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/textViewMemberCount"
+        app:layout_constraintStart_toEndOf="@id/textViewMemberCount"
+        app:layout_constraintTop_toTopOf="@id/textViewMemberCount"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

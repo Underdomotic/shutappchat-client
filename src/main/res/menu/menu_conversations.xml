@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/action_contacts"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Contatti"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="Cerca utenti"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_sync_contacts"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:title="Sincronizza contatti"
+        app:showAsAction="never" />
+    
+    <item
+        android:id="@+id/action_system_notifications"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Notifiche di Sistema"
+        app:showAsAction="never" />
+    
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Impostazioni"
+        app:showAsAction="never" />
+    
+    <item
+        android:id="@+id/action_clear_cache"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Pulisci cache"
+        app:showAsAction="never" />
+    
+    <item
+        android:id="@+id/action_donate"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="Supporta lo sviluppo"
+        app:showAsAction="never" />
+    
+    <item
+        android:id="@+id/action_download"
+        android:icon="@android:drawable/stat_sys_download"
+        android:title="Scarica ultima versione"
+        app:showAsAction="never" />
+    
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="Logout"
+        app:showAsAction="never" />
+    
+</menu>

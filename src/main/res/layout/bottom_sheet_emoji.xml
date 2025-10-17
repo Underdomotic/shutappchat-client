@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleziona Emoji"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- ScrollView per contenere tutte le categorie -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="400dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Categoria: Faccine -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Faccine"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <GridLayout
+                android:id="@+id/gridEmojiFaces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="7"
+                android:alignmentMode="alignBounds"
+                android:useDefaultMargins="true">
+                <!-- Le emoji verranno aggiunte dinamicamente -->
+            </GridLayout>
+
+            <!-- Categoria: Mani e Gesti -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Mani e Gesti"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"/>
+
+            <GridLayout
+                android:id="@+id/gridEmojiHands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="7"
+                android:alignmentMode="alignBounds"
+                android:useDefaultMargins="true">
+            </GridLayout>
+
+            <!-- Categoria: Cuori e Simboli -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Cuori e Simboli"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"/>
+
+            <GridLayout
+                android:id="@+id/gridEmojiHearts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="7"
+                android:alignmentMode="alignBounds"
+                android:useDefaultMargins="true">
+            </GridLayout>
+
+            <!-- Categoria: Oggetti e Altro -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Oggetti e Altro"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"/>
+
+            <GridLayout
+                android:id="@+id/gridEmojiObjects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="7"
+                android:alignmentMode="alignBounds"
+                android:useDefaultMargins="true">
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Pulsante Annulla -->
+    <Button
+        android:id="@+id/btnCancelEmoji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Annulla"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+</LinearLayout>

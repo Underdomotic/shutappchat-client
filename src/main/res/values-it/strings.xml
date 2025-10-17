@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App general -->
+    <string name="app_name">ShutAppChat</string>
+    <string name="navigation_drawer_open">Apri menu navigazione</string>
+    <string name="navigation_drawer_close">Chiudi menu navigazione</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Intestazione navigazione</string>
+    <string name="action_settings">Impostazioni</string>
+
+    <!-- Menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Galleria</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!-- Activity Titles -->
+    <string name="title_chat">Chat</string>
+    <string name="title_profile">Profilo</string>
+    <string name="title_my_contacts">I miei contatti</string>
+    <string name="title_pending_requests">Richieste Pendenti</string>
+
+    <!-- Chat -->
+    <string name="chat_message_hint">Scrivi un messaggio...</string>
+
+    <!-- Message types (for chat preview and notifications) -->
+    <string name="message_preview_photo">📷 Foto</string>
+    <string name="message_preview_video">🎥 Video</string>
+    <string name="message_preview_document">📎 Documento</string>
+    <string name="message_notification_sent_photo">📷 ha inviato una foto</string>
+    <string name="message_notification_sent_video">🎥 ha inviato un video</string>
+    <string name="message_notification_sent_document">📎 ha inviato un documento</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">ShutApp Chat</string>
+    <string name="notification_new_message_title">%1$s scrive:</string>
+
+    <!-- Auth Activity -->
+    <string name="auth_loading_config">Caricamento configurazione...</string>
+    <string name="auth_login_button">Login</string>
+    <string name="auth_default_config">Uso configurazione predefinita</string>
+    <string name="auth_config_error">Errore configurazione: %1$s</string>
+    <string name="auth_enter_credentials">Inserisci username e password</string>
+    <string name="auth_token_missing">Errore: token mancante</string>
+    <string name="auth_login_failed">Login fallito: %1$s</string>
+    <string name="auth_network_error">Errore di rete: %1$s</string>
+
+    <!-- Register Activity -->
+    <string name="register_success">Registrazione completata con successo!</string>
+    <string name="register_username_exists">Username già esistente</string>
+    <string name="register_invalid_data">Dati inseriti non validi</string>
+    <string name="register_server_error">Errore del server: %1$d</string>
+    <string name="register_connection_error">Errore di connessione</string>
+
+    <!-- My Contacts Activity -->
+    <string name="contacts_auth_error">Errore di autenticazione. Rieffettua il login.</string>
+
+    <!-- Requests Pending Activity -->
+    <string name="requests_error">Errore: %1$s</string>
+    <string name="requests_network_error">Errore di rete: %1$s</string>
+    <string name="requests_action_completed">Richiesta %1$s</string>
+    <string name="requests_action_error">Errore: %1$s</string>
+    <string name="requests_response_error">Errore nella risposta: %1$s</string>
+
+    <!-- Contact Requests Activity -->
+    <string name="contact_request_accepted">Richiesta accettata!</string>
+    <string name="contact_request_rejected">Richiesta rifiutata</string>
+    <string name="contact_request_error">Errore: %1$d</string>
+    <string name="contact_request_network_error">Errore di rete</string>
+
+    <!-- My Profile Activity -->
+    <string name="profile_image_copy_error">Errore nella copia dell\'immagine</string>
+    <string name="profile_processed_file_not_found">File elaborato non trovato</string>
+    <string name="profile_edit_todo">Modifica profilo - Da implementare</string>
+    <string name="profile_load_error">Errore nel caricamento profilo</string>
+    <string name="profile_network_error">Errore di rete</string>
+    <string name="profile_permission_needed">Permesso necessario per selezionare immagini</string>
+    <string name="profile_uploading">Caricamento...</string>
+    <string name="profile_avatar_updated">Avatar aggiornato!</string>
+    <string name="profile_upload_error">Errore nel caricamento: %1$s</string>
+    <string name="profile_change_avatar_button">Cambia Avatar</string>
+
+    <!-- Chat Activity -->
+    <string name="chat_photo_cancelled">Foto annullata o errore camera</string>
+    <string name="chat_camera_permission_denied">Permesso camera negato</string>
+    <string name="chat_camera_error">Errore apertura camera: %1$s</string>
+    <string name="chat_attachment_uploading">Caricamento allegato...</string>
+    <string name="chat_file_read_error">Errore lettura file</string>
+    <string name="chat_attachment_sent">Allegato inviato!</string>
+    <string name="chat_attachment_send_error">Errore invio allegato</string>
+    <string name="chat_error">Errore: %1$s</string>
+    <string name="chat_media_data_invalid">Dati media non validi</string>
+    <string name="chat_send_message_error">Errore invio messaggio: %1$s</string>
+    <string name="chat_username_not_found">Username non trovato</string>
+    <string name="chat_send_error">Errore invio: %1$s</string>
+    <string name="chat_permission_granted_retry">Permesso concesso. Riprova a selezionare il file.</string>
+    <string name="chat_contacts_load_error">Errore caricamento contatti</string>
+    <string name="chat_select_contact">Seleziona almeno un contatto</string>
+    <string name="chat_forward_error">Errore durante l\'inoltro</string>
+
+    <!-- Profile Image Editor Activity -->
+    <string name="profile_editor_title">Modifica immagine</string>
+    <string name="profile_editor_overlay_hint">Testo da sovrapporre (trascina la scritta per posizionarla)</string>
+    <string name="profile_editor_overlay_placeholder">Inserisci una frase</string>
+    <string name="profile_editor_text_size">Dimensione testo</string>
+    <string name="profile_editor_text_color">Colore testo</string>
+    <string name="profile_editor_resize_label">Dimensione finale (px)</string>
+    <string name="profile_editor_output_value">Uscita: %1$d px</string>
+    <string name="profile_editor_reset">Reset</string>
+    <string name="profile_editor_cancel">Annulla</string>
+    <string name="profile_editor_apply">Applica</string>
+    <string name="profile_editor_processing">Elaborazione...</string>
+    <string name="profile_editor_color_white">Bianco</string>
+    <string name="profile_editor_color_black">Nero</string>
+    <string name="profile_editor_color_accent">Accent</string>
+    <string name="profile_editor_cannot_open">Impossibile aprire l\'immagine</string>
+    <string name="profile_editor_cannot_process">Impossibile elaborare l\'immagine</string>
+    <string name="profile_editor_processing_error">Errore durante l\'elaborazione: %1$s</string>
+    <string name="profile_editor_cannot_load">Impossibile caricare l\'immagine</string>
+    <string name="profile_editor_open_error">Errore apertura immagine: %1$s</string>
+
+    <!-- Media Viewer Activity -->
+    <string name="media_protected_screenshot_disabled">⚠️ Media protetto: screenshot e salvataggio disabilitati</string>
+    <string name="media_auto_delete">🔒 Media con auto-delete: verrà eliminato dopo la chiusura</string>
+    <string name="media_protected_save_disabled">⚠️ Media protetto: salvataggio non consentito</string>
+    <string name="media_invalid_data">Dati media non validi</string>
+    <string name="media_download_error">Errore download media</string>
+    <string name="media_load_error">Errore caricamento</string>
+    <string name="media_video_open_error">❌ Errore apertura video</string>
+    <string name="media_video_not_available">Video non disponibile</string>
+    <string name="media_video_saved">✅ Video salvato nella galleria</string>
+    <string name="media_video_save_error">❌ Errore salvataggio video</string>
+    <string name="media_image_not_available">Immagine non disponibile</string>
+    <string name="media_image_saved">✅ Immagine salvata nella galleria</string>
+    <string name="media_image_save_error">❌ Errore salvataggio immagine</string>
+
+    <!-- Homepage Activity -->
+    <string name="homepage_settings">Impostazioni</string>
+    <string name="homepage_sync_contacts">Sincronizzazione contatti in corso...</string>
+    <string name="homepage_logout_success">Logout effettuato con successo</string>
+
+    <!-- Permission messages -->
+    <string name="permission_camera_title">Permesso fotocamera</string>
+    <string name="permission_camera_rationale">L\'accesso alla fotocamera è necessario per scattare foto da usare come avatar o da inviare nelle chat.</string>
+    <string name="permission_media_images_title">Permesso immagini</string>
+    <string name="permission_media_images_rationale">L\'accesso alle immagini è necessario per selezionare foto dalla galleria.</string>
+    <string name="permission_media_video_title">Permesso video</string>
+    <string name="permission_media_video_rationale">L\'accesso ai video è necessario per condividere video dalla galleria.</string>
+    <string name="permission_notifications_title">Permesso notifiche</string>
+    <string name="permission_notifications_rationale">Le notifiche sono necessarie per avvisarti quando ricevi nuovi messaggi.</string>
+    <string name="permission_storage_title">Permesso archiviazione</string>
+    <string name="permission_storage_rationale">L\'accesso alla memoria è necessario per selezionare e salvare file multimediali.</string>
+    <string name="permission_required_title">Permesso necessario</string>
+    <string name="permission_denied_permanently">Hai negato questo permesso. Per utilizzare questa funzione, è necessario concedere il permesso dalle impostazioni dell\'app.</string>
+    <string name="permission_grant_button">Concedi</string>
+    <string name="permission_not_now_button">Non ora</string>
+    <string name="permission_settings_button">Vai alle impostazioni</string>
+    <string name="permission_cancel_button">Annulla</string>
+</resources>

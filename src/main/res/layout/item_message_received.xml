@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/imageViewSenderAvatar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/cardViewMessageReceived"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="Avatar Mittente"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewMessageReceived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="64dp"
+        app:cardBackgroundColor="@color/message_received_background"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSenderAvatar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minWidth="220dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textViewSenderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="240dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:text="Nome Mittente"
+                tools:visibility="visible"
+                android:layout_marginBottom="2dp"/>
+
+            <!-- ✅ Messaggio quotato (reply) -->
+            <include
+                android:id="@+id/quotedMessageContainer"
+                layout="@layout/quoted_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imageViewAttachmentReceived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="200dp"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+                tools:srcCompat="@tools:sample/backgrounds/scenic"
+                tools:visibility="visible"
+                android:contentDescription="Allegato Ricevuto" />
+
+            <TextView
+                android:id="@+id/textViewMessageContentReceived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="240dp"
+                android:textColor="@color/message_received_text"
+                android:textSize="16sp"
+                tools:text="Questo è un messaggio ricevuto di esempio un po' più lungo per vedere come va a capo." />
+
+            <TextView
+                android:id="@+id/textViewMessageTimestampReceived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/message_timestamp"
+                android:textSize="11sp"
+                tools:text="10:01" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Icona menu 3 puntini -->
+    <ImageView
+        android:id="@+id/imageViewMessageMenu"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginStart="4dp"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:contentDescription="Menu messaggio"
+    android:padding="6dp"
+    android:src="@android:drawable/ic_menu_more"
+        app:layout_constraintBottom_toBottomOf="@id/cardViewMessageReceived"
+        app:layout_constraintStart_toEndOf="@id/cardViewMessageReceived"
+        app:layout_constraintTop_toTopOf="@id/cardViewMessageReceived" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

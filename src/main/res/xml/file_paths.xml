@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Cache directory root per immagini modificate -->
+    <cache-path name="cache_root" path="." />
+    
+    <!-- Cache directory per foto camera temporanee -->
+    <cache-path name="camera_images" path="camera/" />
+    
+    <!-- Cache directory per media generali -->
+    <cache-path name="media_cache" path="media/" />
+    
+    <!-- Files directory per condivisione -->
+    <files-path name="shared_files" path="shared/" />
+</paths>

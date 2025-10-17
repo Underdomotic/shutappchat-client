@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App general -->
+    <string name="app_name">ShutAppChat</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!-- Activity Titles -->
+    <string name="title_chat">Chat</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_my_contacts">My Contacts</string>
+    <string name="title_pending_requests">Pending Requests</string>
+
+    <!-- Chat -->
+    <string name="chat_message_hint">Type a message...</string>
+
+    <!-- Message types (for chat preview and notifications) -->
+    <string name="message_preview_photo">📷 Photo</string>
+    <string name="message_preview_video">🎥 Video</string>
+    <string name="message_preview_document">📎 Document</string>
+    <string name="message_notification_sent_photo">📷 sent a photo</string>
+    <string name="message_notification_sent_video">🎥 sent a video</string>
+    <string name="message_notification_sent_document">📎 sent a document</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">ShutApp Chat</string>
+    <string name="notification_new_message_title">%1$s write:</string>
+
+    <!-- Auth Activity -->
+    <string name="auth_loading_config">Loading configuration...</string>
+    <string name="auth_login_button">Login</string>
+    <string name="auth_default_config">Using default configuration</string>
+    <string name="auth_config_error">Configuration error: %1$s</string>
+    <string name="auth_enter_credentials">Please enter username and password</string>
+    <string name="auth_token_missing">Error: missing token</string>
+    <string name="auth_login_failed">Login failed: %1$s</string>
+    <string name="auth_network_error">Network error: %1$s</string>
+
+    <!-- Register Activity -->
+    <string name="register_success">Registration completed successfully!</string>
+    <string name="register_username_exists">Username already exists</string>
+    <string name="register_invalid_data">Invalid data entered</string>
+    <string name="register_server_error">Server error: %1$d</string>
+    <string name="register_connection_error">Connection error</string>
+
+    <!-- My Contacts Activity -->
+    <string name="contacts_auth_error">Authentication error. Please log in again.</string>
+
+    <!-- Requests Pending Activity -->
+    <string name="requests_error">Error: %1$s</string>
+    <string name="requests_network_error">Network error: %1$s</string>
+    <string name="requests_action_completed">Request %1$s</string>
+    <string name="requests_action_error">Error: %1$s</string>
+    <string name="requests_response_error">Response error: %1$s</string>
+
+    <!-- Contact Requests Activity -->
+    <string name="contact_request_accepted">Request accepted!</string>
+    <string name="contact_request_rejected">Request rejected</string>
+    <string name="contact_request_error">Error: %1$d</string>
+    <string name="contact_request_network_error">Network error</string>
+
+    <!-- My Profile Activity -->
+    <string name="profile_image_copy_error">Error copying image</string>
+    <string name="profile_processed_file_not_found">Processed file not found</string>
+    <string name="profile_edit_todo">Edit profile - To be implemented</string>
+    <string name="profile_load_error">Error loading profile</string>
+    <string name="profile_network_error">Network error</string>
+    <string name="profile_permission_needed">Permission needed to select images</string>
+    <string name="profile_uploading">Uploading...</string>
+    <string name="profile_avatar_updated">Avatar updated!</string>
+    <string name="profile_upload_error">Upload error: %1$s</string>
+    <string name="profile_change_avatar_button">Change Avatar</string>
+
+    <!-- Chat Activity -->
+    <string name="chat_photo_cancelled">Photo cancelled or camera error</string>
+    <string name="chat_camera_permission_denied">Camera permission denied</string>
+    <string name="chat_camera_error">Camera opening error: %1$s</string>
+    <string name="chat_attachment_uploading">Uploading attachment...</string>
+    <string name="chat_file_read_error">File read error</string>
+    <string name="chat_attachment_sent">Attachment sent!</string>
+    <string name="chat_attachment_send_error">Attachment sending error</string>
+    <string name="chat_error">Error: %1$s</string>
+    <string name="chat_media_data_invalid">Invalid media data</string>
+    <string name="chat_send_message_error">Error sending message: %1$s</string>
+    <string name="chat_username_not_found">Username not found</string>
+    <string name="chat_send_error">Sending error: %1$s</string>
+    <string name="chat_permission_granted_retry">Permission granted. Please try selecting the file again.</string>
+    <string name="chat_contacts_load_error">Error loading contacts</string>
+    <string name="chat_select_contact">Select at least one contact</string>
+    <string name="chat_forward_error">Error during forwarding</string>
+
+    <!-- Profile Image Editor Activity -->
+    <string name="profile_editor_title">Edit image</string>
+    <string name="profile_editor_overlay_hint">Text to overlay (drag the text to position it)</string>
+    <string name="profile_editor_overlay_placeholder">Enter a phrase</string>
+    <string name="profile_editor_text_size">Text size</string>
+    <string name="profile_editor_text_color">Text color</string>
+    <string name="profile_editor_resize_label">Final size (px)</string>
+    <string name="profile_editor_output_value">Output: %1$d px</string>
+    <string name="profile_editor_reset">Reset</string>
+    <string name="profile_editor_cancel">Cancel</string>
+    <string name="profile_editor_apply">Apply</string>
+    <string name="profile_editor_processing">Processing...</string>
+    <string name="profile_editor_color_white">White</string>
+    <string name="profile_editor_color_black">Black</string>
+    <string name="profile_editor_color_accent">Accent</string>
+    <string name="profile_editor_cannot_open">Cannot open image</string>
+    <string name="profile_editor_cannot_process">Cannot process image</string>
+    <string name="profile_editor_processing_error">Processing error: %1$s</string>
+    <string name="profile_editor_cannot_load">Cannot load image</string>
+    <string name="profile_editor_open_error">Image opening error: %1$s</string>
+
+    <!-- Media Viewer Activity -->
+    <string name="media_protected_screenshot_disabled">⚠️ Protected media: screenshot and save disabled</string>
+    <string name="media_auto_delete">🔒 Auto-delete media: will be deleted after closing</string>
+    <string name="media_protected_save_disabled">⚠️ Protected media: saving not allowed</string>
+    <string name="media_invalid_data">Invalid media data</string>
+    <string name="media_download_error">Media download error</string>
+    <string name="media_load_error">Loading error</string>
+    <string name="media_video_open_error">❌ Video opening error</string>
+    <string name="media_video_not_available">Video not available</string>
+    <string name="media_video_saved">✅ Video saved to gallery</string>
+    <string name="media_video_save_error">❌ Video saving error</string>
+    <string name="media_image_not_available">Image not available</string>
+    <string name="media_image_saved">✅ Image saved to gallery</string>
+    <string name="media_image_save_error">❌ Image saving error</string>
+
+    <!-- Homepage Activity -->
+    <string name="homepage_settings">Settings</string>
+    <string name="homepage_sync_contacts">Syncing contacts...</string>
+    <string name="homepage_logout_success">Logout successful</string>
+
+    <!-- Permission messages -->
+    <string name="permission_camera_title">Camera permission</string>
+    <string name="permission_camera_rationale">Camera access is needed to take photos for your avatar or to send in chats.</string>
+    <string name="permission_media_images_title">Images permission</string>
+    <string name="permission_media_images_rationale">Image access is needed to select photos from the gallery.</string>
+    <string name="permission_media_video_title">Video permission</string>
+    <string name="permission_media_video_rationale">Video access is needed to share videos from the gallery.</string>
+    <string name="permission_notifications_title">Notifications permission</string>
+    <string name="permission_notifications_rationale">Notifications are needed to alert you when you receive new messages.</string>
+    <string name="permission_storage_title">Storage permission</string>
+    <string name="permission_storage_rationale">Storage access is needed to select and save media files.</string>
+    <string name="permission_required_title">Permission required</string>
+    <string name="permission_denied_permanently">You have denied this permission. To use this feature, you need to grant the permission from app settings.</string>
+    <string name="permission_grant_button">Grant</string>
+    <string name="permission_not_now_button">Not now</string>
+    <string name="permission_settings_button">Go to settings</string>
+    <string name="permission_cancel_button">Cancel</string>
+</resources>
