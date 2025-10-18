@@ -23,7 +23,7 @@
 
 ##  Architettura
 
-\\\
+```
 
   ShutAppChat Android Client (MVVM)      
    Material Design 3 UI                 
@@ -40,7 +40,7 @@
    WebSocket Server (Go 1.21+)          
    MariaDB 10.5+ Database                
 
-\\\
+```
 
 ###  Principio Cardine: Zero Persistenza
 
@@ -76,36 +76,33 @@ I messaggi **NON vengono salvati sul server**. Vanno direttamente da client a cl
 ### Installazione
 
 1. **Clone il repository**
-\\\ash
+```bash
 git clone https://github.com/Underdomotic/shutappchat-client.git
 cd shutappchat-client
-\\\
+```
 
 2. **Apri con Android Studio**
-\\\ash
+```bash
 # Apri il progetto in Android Studio
 # File > Open > seleziona la cartella del progetto
-\\\
+```
 
 3. **Configura l'endpoint API**
 
-Modifica il file \pp/src/main/java/com/shutapp/chat/config/ApiConfig.kt\:
-\\\kotlin
+Modifica il file \app/src/main/java/com/shutapp/chat/config/ApiConfig.kt\:
+```kotlin
 object ApiConfig {
     const val BASE_URL = "https://shutappchat.fabiodirauso.it/api/v2/"
     const val WS_URL = "wss://shutappchat.fabiodirauso.it/ws"
 }
-\\\
+
 
 4. **Build & Run**
-\\\ash
+```
 ./gradlew assembleDebug
-# Oppure usa Android Studio: Run > Run 'app'
-\\\
+```
+Oppure usa Android Studio: Run > Run 'app'
 
-##  Struttura Progetto
-
-\\\
 ##  Struttura Progetto
 
 ```
@@ -128,7 +125,7 @@ shutappchat-client/
 ├── LICENSE                          # GNU GPL v3
 └── README.md                        # Questo file
 ```
-\\\
+
 
 ##  Sicurezza & Privacy
 
@@ -173,7 +170,7 @@ Contributi sono benvenuti! Per favore leggi la [Guida Contribuzione](CONTRIBUTIN
 
 ##  Testing
 
-\\\ash
+```bash
 # Run unit tests
 ./gradlew test
 
@@ -182,17 +179,17 @@ Contributi sono benvenuti! Per favore leggi la [Guida Contribuzione](CONTRIBUTIN
 
 # Run lint checks
 ./gradlew lint
-\\\
+```
 
 ##  Build Release
 
-\\\ash
+```bash
 # Build release APK
 ./gradlew assembleRelease
 
 # Build release Bundle (AAB)
 ./gradlew bundleRelease
-\\\
+```
 
 ##  Roadmap
 
