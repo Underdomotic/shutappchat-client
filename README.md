@@ -82,30 +82,32 @@ cd shutappchat-client
 ```
 
 2. **Apri con Android Studio**
-```bash
 # Apri il progetto in Android Studio
 # File > Open > seleziona la cartella del progetto
-```
+
+
 
 3. **Configura l'endpoint API**
 
 Modifica il file \app/src/main/java/com/shutapp/chat/config/ApiConfig.kt\:
+
 ```kotlin
 object ApiConfig {
     const val BASE_URL = "https://shutappchat.fabiodirauso.it/api/v2/"
     const val WS_URL = "wss://shutappchat.fabiodirauso.it/ws"
 }
 
+```
 
 4. **Build & Run**
-```
+```bash
 ./gradlew assembleDebug
 ```
 Oppure usa Android Studio: Run > Run 'app'
 
 ##  Struttura Progetto
 
-```
+```bash
 shutappchat-client/
 ├── app/
 │   ├── src/
