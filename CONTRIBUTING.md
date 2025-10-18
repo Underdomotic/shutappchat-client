@@ -1,132 +1,336 @@
-﻿# Contributing to ShutAppChat
+﻿#  Guida alla Contribuzione
 
-First off, thank you for considering contributing to ShutAppChat! �
+Grazie per l'interesse nel contribuire a **ShutAppChat**! 
 
-## Code of Conduct
+Questa guida ti aiuterà a iniziare con il processo di contribuzione.
 
-By participating in this project, you are expected to uphold a respectful and collaborative environment for all contributors.
+##  Indice
 
-## How Can I Contribute?
+- [Codice di Condotta](#codice-di-condotta)
+- [Come Posso Contribuire?](#come-posso-contribuire)
+- [Processo di Sviluppo](#processo-di-sviluppo)
+- [Linee Guida per il Codice](#linee-guida-per-il-codice)
+- [Commit Messages](#commit-messages)
+- [Pull Request](#pull-request)
 
-### Reporting Bugs
+##  Codice di Condotta
 
-Before creating bug reports, please check existing issues to avoid duplicates. When creating a bug report, include:
+Partecipando a questo progetto, ti impegni a rispettare il nostro [Codice di Condotta](CODE_OF_CONDUCT.md).
 
-- **Clear title and description**
-- **Steps to reproduce** the behavior
-- **Expected behavior**
-- **Screenshots** if applicable
-- **Device information** (Android version, device model)
-- **App version**
+### Principi Base
+-  Sii rispettoso e inclusivo
+-  Accetta critiche costruttive
+-  Concentrati su ciò che è meglio per la community
+-  Non usare linguaggio offensivo o immagini inappropriate
+-  Non molestare altri contributori
 
-### Suggesting Enhancements
+##  Come Posso Contribuire?
 
-Enhancement suggestions are tracked as GitHub issues. When creating an enhancement suggestion, include:
+### Segnalare Bug 
 
-- **Clear title and description** of the feature
-- **Use cases** explaining why this would be useful
-- **Possible implementation** if you have ideas
+Prima di creare una issue per un bug:
+1. **Controlla** se esiste già una issue simile
+2. **Usa** il template per i bug report
+3. **Includi**:
+   - Versione app (es. v1.2.9)
+   - Versione Android (es. Android 13)
+   - Dispositivo (es. Samsung Galaxy S23)
+   - Steps per riprodurre il bug
+   - Screenshot/video se possibile
+   - Log rilevanti
 
-### Pull Requests
+### Suggerire Nuove Funzionalità 
 
-1. Fork the repository
-2. Create a new branch (\git checkout -b feature/amazing-feature\)
-3. Make your changes
-4. Commit your changes (\git commit -m 'Add some amazing feature'\)
-5. Push to the branch (\git push origin feature/amazing-feature\)
-6. Open a Pull Request
+Per proporre una nuova feature:
+1. **Verifica** che non sia già stata proposta
+2. **Spiega** il problema che risolve
+3. **Descrivi** la soluzione proposta
+4. **Considera** alternative già valutate
 
-## Development Setup
+### Migliorare la Documentazione 
 
-### Prerequisites
+Contributi alla documentazione sono sempre benvenuti:
+- Correggere typo
+- Migliorare chiarezza spiegazioni
+- Aggiungere esempi
+- Tradurre in altre lingue
 
-- Android Studio Hedgehog or later
-- JDK 17+
-- Android SDK 34
+### Scrivere Codice 
 
-### Building the Project
+#### Aree di Contribuzione
 
-1. Clone the repository:
-   \\\ash
-   git clone https://github.com/yourusername/ShutAppChat-Client.git
-   cd ShutAppChat-Client
-   \\\
+**Frontend (Android Client)**
+- UI/UX improvements
+- Nuove features
+- Bug fixes
+- Performance optimizations
+- Accessibility improvements
 
-2. Create your \ServerConfig.kt\:
-   \\\ash
-   cp src/main/java/it/fabiodirauso/shutappchat/config/ServerConfig.example.kt \
-      src/main/java/it/fabiodirauso/shutappchat/config/ServerConfig.kt
-   \\\
+**Documentazione**
+- README miglioramenti
+- Code comments
+- Tutorial
+- API documentation
 
-3. Configure your server URLs in \ServerConfig.kt\
+##  Processo di Sviluppo
 
-4. Build the project:
-   \\\ash
-   ./gradlew build
-   \\\
+### 1 Fork & Clone
 
-## Coding Standards
+\\\ash
+# Fork del repository su GitHub
+# Poi clona il tuo fork
+git clone https://github.com/TUO_USERNAME/shutappchat-client.git
+cd shutappchat-client
+
+# Aggiungi upstream remote
+git remote add upstream https://github.com/Underdomotic/shutappchat-client.git
+\\\
+
+### 2 Crea un Branch
+
+\\\ash
+# Aggiorna il tuo main
+git checkout main
+git pull upstream main
+
+# Crea un branch per la tua feature
+git checkout -b feature/nome-feature
+# Oppure per un bugfix
+git checkout -b fix/nome-bug
+\\\
+
+**Convenzioni Nomi Branch:**
+- \eature/\ - Nuove funzionalità
+- \ix/\ - Bug fixes
+- \docs/\ - Documentazione
+- \
+efactor/\ - Refactoring codice
+- \	est/\ - Aggiungere/migliorare test
+
+### 3 Sviluppa
+
+- Scrivi codice pulito e leggibile
+- Segui le [Linee Guida Kotlin](https://kotlinlang.org/docs/coding-conventions.html)
+- Aggiungi test se appropriato
+- Aggiorna la documentazione
+
+### 4 Test
+
+\\\ash
+# Run unit tests
+./gradlew test
+
+# Run lint
+./gradlew lint
+
+# Run instrumented tests
+./gradlew connectedAndroidTest
+\\\
+
+### 5 Commit
+
+Vedi [Commit Messages](#commit-messages) per le convenzioni.
+
+\\\ash
+git add .
+git commit -m "feat: aggiungi supporto per voice messages"
+\\\
+
+### 6 Push & Pull Request
+
+\\\ash
+git push origin feature/nome-feature
+\\\
+
+Poi apri una Pull Request su GitHub.
+
+##  Linee Guida per il Codice
 
 ### Kotlin Style Guide
 
-- Follow the official [Kotlin coding conventions](https://kotlinlang.org/docs/coding-conventions.html)
-- Use meaningful variable and function names
-- Add comments for complex logic
-- Keep functions small and focused
+Segui le [Kotlin Coding Conventions](https://kotlinlang.org/docs/coding-conventions.html).
 
-### Architecture Guidelines
+**Esempi:**
 
-This project follows MVVM architecture:
-
-- **Activities/Fragments**: UI layer only
-- **ViewModels**: Business logic and state management
-- **Repositories**: Data source abstraction
-- **DAOs**: Database operations
-- **API Services**: Network calls
-
-### Code Organization
-
-- Place UI components in appropriate packages (\ctivities\, \ragments\, \dapters\)
-- Data models in \model\ package
-- Database entities in \database\ package
-- Utility functions in \utils\ package
-
-### Commit Messages
-
-- Use clear, descriptive commit messages
-- Start with a verb in present tense (Add, Fix, Update, Remove)
-- Keep the first line under 50 characters
-- Add detailed description if needed
-
-Examples:
-\\\
-Add group avatar upload feature
-Fix message deletion crash
-Update WebSocket reconnection logic
+ **DO:**
+\\\kotlin
+// Nomi descrittivi
+class MessageRepository(private val messageDao: MessageDao) {
+    suspend fun sendMessage(message: Message): Result<Unit> {
+        return try {
+            messageDao.insert(message)
+            Result.success(Unit)
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
+    }
+}
 \\\
 
-## Testing
+ **DON'T:**
+\\\kotlin
+// Nomi poco chiari, logica complessa
+class MsgRepo(val d: MessageDao) {
+    fun send(m: Message) {
+        d.insert(m)
+    }
+}
+\\\
 
-- Write unit tests for business logic
-- Test UI changes on multiple Android versions
-- Test on both physical devices and emulators
-- Ensure no crashes or ANRs
+### Architettura MVVM
 
-## Documentation
+Segui il pattern MVVM esistente:
 
-- Update README.md if you change setup instructions
-- Document new APIs or significant changes
-- Add KDoc comments for public APIs
-- Update CHANGELOG.md for notable changes
+\\\
+View (Activity/Fragment)
+  
+ViewModel (business logic)
+  
+Repository (data layer)
+  
+Data Sources (Room DB + Network)
+\\\
 
-## License
+### Naming Conventions
 
-By contributing, you agree that your contributions will be licensed under the GPL-3.0 License.
+| Tipo | Convenzione | Esempio |
+|------|-------------|---------|
+| Classes | PascalCase | \MessageViewModel\ |
+| Functions | camelCase | \sendMessage()\ |
+| Variables | camelCase | \userName\ |
+| Constants | UPPER_SNAKE_CASE | \MAX_RETRY_COUNT\ |
+| XML IDs | snake_case | \tn_send_message\ |
+| Layouts | activity/fragment_name | \ctivity_chat.xml\ |
 
-## Questions?
+### Code Quality
 
-Feel free to open an issue with the \question\ label if you have any questions about contributing!
+- **No Magic Numbers**: Usa costanti
+  \\\kotlin
+  //  Bad
+  if (messages.size > 50) { ... }
+  
+  //  Good
+  private const val MAX_MESSAGES_CACHE = 50
+  if (messages.size > MAX_MESSAGES_CACHE) { ... }
+  \\\
+
+- **Null Safety**: Sfrutta le feature Kotlin
+  \\\kotlin
+  //  Good
+  val username = user?.username ?: "Anonymous"
+  \\\
+
+- **Coroutines**: Usa per operazioni async
+  \\\kotlin
+  viewModelScope.launch {
+      val result = repository.fetchMessages()
+      // Handle result
+  }
+  \\\
+
+##  Commit Messages
+
+Usa il formato [Conventional Commits](https://www.conventionalcommits.org/).
+
+### Format
+
+\\\
+<type>(<scope>): <subject>
+
+<body>
+
+<footer>
+\\\
+
+### Types
+
+- \eat\: Nuova feature
+- \ix\: Bug fix
+- \docs\: Documentazione
+- \style\: Formattazione (no logic change)
+- \
+efactor\: Refactoring codice
+- \perf\: Performance improvement
+- \	est\: Aggiungere/modificare test
+- \chore\: Build, dependencies, tools
+
+### Esempi
+
+\\\ash
+feat(chat): add voice message recording
+
+Implement audio recording using MediaRecorder API.
+Add UI button for voice messages in chat screen.
+
+Closes #123
+\\\
+
+\\\ash
+fix(auth): prevent crash on invalid JWT token
+
+Handle expired tokens gracefully by redirecting to login.
+
+Fixes #456
+\\\
+
+\\\ash
+docs(readme): update installation instructions
+\\\
+
+##  Pull Request
+
+### Checklist
+
+Prima di aprire una PR, verifica:
+
+- [ ] Il codice compila senza errori
+- [ ] Tutti i test passano
+- [ ] Lint non ha warning
+- [ ] Documentazione aggiornata
+- [ ] Commit messages seguono convenzioni
+- [ ] Branch è aggiornato con \main\
+- [ ] Screenshots/video se cambio UI
+
+### Template PR
+
+\\\markdown
+## Descrizione
+Breve descrizione delle modifiche.
+
+## Tipo di Cambiamento
+- [ ] Bug fix (non-breaking change)
+- [ ] Nuova feature (non-breaking change)
+- [ ] Breaking change
+- [ ] Documentazione
+
+## Come è stato testato?
+Descrivi i test effettuati.
+
+## Screenshots
+(Se applicabile)
+
+## Issue Collegate
+Closes #123
+\\\
+
+### Review Process
+
+1. **Automated Checks**: CI/CD esegue test e lint
+2. **Code Review**: Almeno 1 approvazione richiesta
+3. **Testing**: Verifica su dispositivo reale
+4. **Merge**: Squash and merge in \main\
+
+##  Domande?
+
+Se hai domande:
+-  Email: info@fabiodirauso.it
+-  Apri una [Discussion](https://github.com/Underdomotic/shutappchat-client/discussions)
+-  Leggi la [Documentazione](https://shutappchat.fabiodirauso.it/docs.html)
+
+##  Riconoscimenti
+
+Tutti i contributori saranno aggiunti alla [Contributors List](CONTRIBUTORS.md).
 
 ---
 
-Thank you for contributing to ShutAppChat! 
+Grazie per contribuire a ShutAppChat! 
