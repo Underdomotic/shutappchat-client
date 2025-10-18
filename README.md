@@ -245,5 +245,5 @@ Un ringraziamento speciale a:
 ---
 
 <p align="center">
-  Fatto con  per la privacy
+  Realizzato con ❤️ per la privacy da FabioDiRauso.it
 </p>
